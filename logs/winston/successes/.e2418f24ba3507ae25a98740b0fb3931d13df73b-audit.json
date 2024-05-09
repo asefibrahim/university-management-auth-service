@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\mongoose\\University-management-app\\University-management-auth-service\\logs\\winston\\successes\\.e2418f24ba3507ae25a98740b0fb3931d13df73b-audit.json",
+    "files": [
+        {
+            "date": 1715109916167,
+            "name": "C:\\mongoose\\University-management-app\\University-management-auth-service\\logs\\winston\\successes\\phu-2024-05-08-01-success.log",
+            "hash": "6ec81e63a1c73fc5efa5398ee715da60ad4530a960fbf0176073182936ee0042"
+        }
+    ],
+    "hashType": "sha256"
+}

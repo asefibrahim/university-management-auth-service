@@ -1,0 +1,12 @@
+Fri May 10 2024 2:11:48 [Error] error: GlobalErrorHandler [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
