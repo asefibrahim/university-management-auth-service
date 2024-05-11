@@ -1,27 +1,29 @@
-import express, { Application, urlencoded } from 'express'
+import express, { Application, urlencoded } from 'express';
+import cors from 'cors';
+import globalErrorHandler from './app/middlewares/globalErrorHandler';
+import routes from './app/routes';
 
-import cors from 'cors'
+const app: Application = express();
+app.use(cors());
 
-import globalErrorHandler from './app/middlewares/globalErrorHandler'
-import { UserRoutes } from './app/Modules/users/user.route'
-
-const app: Application = express()
-app.use(cors())
 // parser
-app.use(express.json())
-app.use(urlencoded({ extended: true }))
-app.use('/api/v1/users', UserRoutes)
+app.use(express.json());
+app.use(urlencoded({ extended: true }));
 
-app.get('/', async (req: Request, res: Response, next: NextFunction) => {
- Promise.reject(new Error ("Unhandled Promise rejection"))
+// Routes
+app.use('/api/v1', routes);
+// app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
 
-  //   res.send(
-  //     'University is running well and will started the logic soon .....................',
-  //   )
-})
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//  Promise.reject(new Error ("Unhandled Promise rejection"))
+
+//   //   res.send(
+//   //     'University is running well and will started the logic soon .....................',
+//   //   )
+// })
 
 // global error handler
 
-app.use(globalErrorHandler)
+app.use(globalErrorHandler);
 
-export default app
+export default app;

@@ -1,0 +1,46 @@
+Fri May 10 2024 15:53:17 [Error] error: GlobalErrorHandler [
+  {
+    "received": "08",
+    "code": "invalid_enum_value",
+    "options": [
+      "01",
+      "02",
+      "03"
+    ],
+    "path": [
+      "body",
+      "code"
+    ],
+    "message": "Invalid enum value. Expected '01' | '02' | '03', received '08'"
+  }
+]
+Fri May 10 2024 15:53:56 [Error] error: GlobalErrorHandler [
+  {
+    "received": "",
+    "code": "invalid_enum_value",
+    "options": [
+      "Autumn",
+      "Summer",
+      "Fall"
+    ],
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received ''"
+  },
+  {
+    "received": "08",
+    "code": "invalid_enum_value",
+    "options": [
+      "01",
+      "02",
+      "03"
+    ],
+    "path": [
+      "body",
+      "code"
+    ],
+    "message": "Invalid enum value. Expected '01' | '02' | '03', received '08'"
+  }
+]
